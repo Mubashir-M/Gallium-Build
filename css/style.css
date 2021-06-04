@@ -195,16 +195,21 @@ a {
 
 .main-footer {
   height: 100vh;
+  width: 100vw;
+  margin-left: -66vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: bisque;
-  border: solid green 5px;
-  z-index: +2;
 }
 /* RIGHT CONTENT END */
 
 @media only screen and (max-width: 880px) {
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
   .main-content {
     height: 100vh;
     width: 100vw;
@@ -214,7 +219,7 @@ a {
     width: 100vw;
   }
   .main-footer {
-    width: 100vw;
-  }
-  
+    width: 100%;
+    margin-left: 0.2vw;
+  }  
 }
