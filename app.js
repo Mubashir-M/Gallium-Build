@@ -14,3 +14,12 @@ function splitScroll(){
   }
 }
 splitScroll();
+
+
+
+window.addEventListener('resize', function () { 
+  "use strict";
+  setTimeout(function(){
+    window.location.reload();
+  });
+});

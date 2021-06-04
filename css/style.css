@@ -58,7 +58,7 @@
 a {
   text-decoration: none;
   color: white;
-  font-weight: bo300d;
+  font-weight: 300;
   font-size: 20px;
   line-height: 28px
 }
@@ -194,7 +194,7 @@ a {
 }
 
 .main-footer {
-  height: 100vh;
+  height: 10vh;
   width: 100vw;
   margin-left: -66vw;
   display: flex;
@@ -221,5 +221,5 @@ a {
   .main-footer {
     width: 100%;
     margin-left: 0.2vw;
-  }  
+  } 
 }
