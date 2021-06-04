@@ -1,0 +1,220 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  height: 400vh;
+  width: 100vw;
+  display: flex;
+}
+/* LEFT CONTENT START */
+.left-content {
+  background: url("https://image.freepik.com/free-photo/close-up-machine-pouring-coffee-cup_23-2148892834.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.navbar {
+  width: 65%;
+  margin-top: 28px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .brandLogo {
+  display: block;
+  padding: 0 24px;
+  font-size: 24px;
+}
+
+.navbar ul li a {
+  margin-right: 20px;
+}
+.navbar a:hover {
+  border-bottom: solid white 1px;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items:center;
+  margin-right: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bo300d;
+  font-size: 20px;
+  line-height: 28px
+}
+.brandLogo {
+  color:white;
+}
+
+.gallium-build {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.gallium-build h1 {
+  font-family: 'Lobster', cursive;
+  font-style:italic;
+  font-size: 96px;
+  line-height: 117px;
+  font-weight:500;
+}
+
+.gallium-build h2 {
+  font-family: Montserrat;
+  font-style: italic;
+  font-size: 30px;
+  font-weight:100;
+}
+
+/* LEFT CONTENT END*/
+
+/* RIGHT CONTENT START */
+.right-content {
+  width: 35%;
+  background-color:#3E3731;
+}
+.right-content .slide-1, .slide-2, .slide-3, .slide-4 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.slide-1 h2 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 45px;
+  color: white;
+}
+.slide-1 form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.slide-1 #email {
+  width:200px;
+  height: 30px;
+  text-align: center;
+}
+.slide-1 #submit {
+  margin-top: 20px;
+  width:100px;
+  height: 35px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.slide-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+}
+
+.slide-2 h3, .slide-3 h3 {
+  color: white;
+  font-family:roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+}
+.slide-2 p, .slide-3 p {
+  color:white;
+  margin-top: 2rem;
+  width: 80%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 16px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.featured-text {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+.slide-3 #video {
+  margin-top: 2rem;
+}
+.slide-3 h3 {
+  font-size: 42px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dot {
+  margin-top: 8rem;
+  margin: 2rem;
+  height: 30px;
+  width: 30px;
+  border: solid white 2px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.main-footer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border: solid green 5px;
+  z-index: +2;
+}
+/* RIGHT CONTENT END */
+
+@media only screen and (max-width: 880px) {
+  .main-content {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+  }
+  .left-content, .right-content {
+    width: 100vw;
+  }
+  .main-footer {
+    width: 100vw;
+  }
+  
+}
